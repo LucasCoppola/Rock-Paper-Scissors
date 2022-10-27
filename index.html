@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rock, Paper & Scissors</h1>
+    <h2>Choose One:</h2>
+    <div class="container-images">
+        <input name="rock" class="img" type="image" src="https://www.pngitem.com/pimgs/m/107-1073189_angle-nose-rock-rock-clipart-transparent-background-hd.png" alt="rock-image">
+        <input name="paper" class="img" type="image" src="https://t4.ftcdn.net/jpg/03/03/60/99/360_F_303609961_q026RoeUYia0Ufp6nrKjrqdGcgRyjaxQ.jpg" alt="paper-image">
+        <input name="scissors" class="img" type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyLWao7wB91A-Lb2dxIZSI2oR46FZJbOe-xg&usqp=CAU" alt="scissors-image">
+    </div>
+    <h2><span id="player-display"></span> vs. <span id="computer-display"></span></h2>
+    <h3 id="text-display"></h3>
+    <div class="score-container">
+        <h2>Score:</h2>
+        <h3>You <span id="player-score">0</span> : <span id="computer-score">0</span> Computer</h3>
+    </div>
+    <div id="options-container">
+        <div>
+            <label for="select-score">Playing to:</label>
+            <select id="select-score" required>
+            <option value="1">1</option>
+            <option value="3" selected>3</option>
+            <option value="5">5</option>
+            <option value="8">8</option>
+            </select>
+        </div>
+        <button id="reset-btn">Reset</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
